@@ -18,9 +18,4 @@
 #     return summa
 # royhat=[2,5,4]
 # print(hisobla(royhat))
-# 5
-def unlilarni_top(matn):
-    unlilar = ["a","e","u","i","o","A","E","U","I","O"]
-    top = matn
-    return top
-print(unlilarni_top('salom salom'))
+# 
