@@ -103,4 +103,14 @@
 #     else:
 #         return royhat[0]+royhat_yigindisi(royhat[1:])
 # print(royhat_yigindisi([10,20,30,40,50]))
-
+# 8
+# def kattasini_top(n):
+#     if len(n)==0:
+#         return 0
+#     else:
+#         eng_katta= kattasini_top(n[1:])
+#         if n[0] > eng_katta:
+#             return n[0]
+#         else:
+#             return eng_katta
+# print(kattasini_top([12,85,96]))
