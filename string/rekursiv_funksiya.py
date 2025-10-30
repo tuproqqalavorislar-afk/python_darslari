@@ -87,5 +87,20 @@
 #     if n==0:
 #         return 0
 #     else:
-#         return 1
-# print(raqamlarni_sana(2))
+#         return 1+ raqamlarni_sana(n//10)
+# print(raqamlarni_sana(56))
+# 6
+# def teskari_qil(matn):
+#     if len (matn)==0:
+#         return " "
+#     else:
+#         return matn[-1]+teskari_qil(matn[:-1])
+# print(teskari_qil('matn'))
+# 7
+# def royhat_yigindisi(royhat):
+#     if len(royhat)==0:
+#         return 0
+#     else:
+#         return royhat[0]+royhat_yigindisi(royhat[1:])
+# print(royhat_yigindisi([10,20,30,40,50]))
+
