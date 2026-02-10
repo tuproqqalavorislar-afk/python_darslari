@@ -172,7 +172,7 @@
 #     def get_teacher(self):
 #         return f"{self.get_info()}\nDars beradigan fani: {self.fan}"
 
-# # 10
+# 10
 # class Mashina:
 #     def __init__(self , rusumi , yil , rangi):
 #         self.model = rusumi
@@ -186,4 +186,51 @@
 #         self.yuk = yuk
 #     def get_info(self):
 #         return f"{self.get_info()}\n yuk:"
-# mashin = 
+# mashin = Yuk_mashina("fura","2023","oq" ,"shassi")
+# print(mashin.get_info())
+# 11
+# class Uchuvchi:
+#     def __init__(self , ismi , yoshi, samolyot_turi ):
+#         self.name = ismi
+#         self.age = yoshi
+#         self.plane = samolyot_turi
+#     def get_info(self):
+#         return f"Uchuvchining ismi:{self.name}\nUchuvchining yoshi:{self.age}\nUchuvchi boshqaradigan samolyot turi:{self.plane}"
+# class Harbiy_uchuvchi(Uchuvchi):
+#     def __init__(self, ismi, yoshi, samolyot_turi, quroli_kuch):
+#         super().__init__(ismi, yoshi, samolyot_turi)    
+#         self.armed_forces = quroli_kuch
+#     def info(self):
+#         return f"{self.get_info()}\nQurolli kuch turi:{self.armed_forces}"
+# uchuvchi=Harbiy_uchuvchi("Olim",25,"MiG","qiruvchi")    
+# print(uchuvchi.info())
+# 12
+# class Kitob:
+#     def __init__(self , nomi , turi):
+#         self.name = nomi
+#         self.type = turi
+#     def get_info(self):
+#         return f"kitobning nomi:{self.name}\nkitobning turi:{self.type}"
+# class Darslik(Kitob):
+#     def __init__(self, nomi, turi , maxsus_oqish_uchun , tartiblangan_mavzular):
+#         super().__init__(nomi, turi)
+#         self.special = maxsus_oqish_uchun
+#         self.organized_topics = tartiblangan_mavzular
+#     def info(self):
+#         return f"{self.get_info()}\nMaxsus oqish uchun:{self.special}\nTartiblangan mavzu:{self.organized_topics} "
+# kitob1 = Darslik("informatika","dasturlash haqida","majburiy oqish","tartiblangan mazular")
+# print(kitob1.info())
+# 13# 
+# class Hayvon:
+#     def ovoz(self):
+#         return ("hayvonlar har hil ovoz chiqaradi")
+# class Mushuk(Hayvon):
+#     def __init__ (self,mushuk):
+#         self.cat = mushuk
+#     def info(self):
+#         return f"mushukning ovozi:{self.ovoz}"
+# cat1 = Mushuk("Miyov-Miyov")
+# print(cat1.info)
+# # 14
+# class Qurilma:
+#     def __init__(self , turi , narxi ,):
