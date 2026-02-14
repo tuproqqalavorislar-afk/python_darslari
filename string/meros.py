@@ -217,7 +217,7 @@
 #         self.special = maxsus_oqish_uchun
 #         self.organized_topics = tartiblangan_mavzular
 #     def info(self):
-#         return f"{self.get_info()}\nMaxsus oqish uchun:{self.special}\nTartiblangan mavzu:{self.organized_topics} "
+        # return f"{self.get_info()}\nMaxsus oqish uchun:{self.special}\nTartiblangan mavzu:{self.organized_topics} "
 # kitob1 = Darslik("informatika","dasturlash haqida","majburiy oqish","tartiblangan mazular")
 # print(kitob1.info())
 # 13# 
@@ -233,4 +233,30 @@
 # print(cat1.info)
 # # 14
 # class Qurilma:
-#     def __init__(self , turi , narxi ,):
+#     def __init__(self , nomi , turi , narxi):
+#         self.type = turi
+#         self.price = narxi
+#         self.name = nomi
+#     def get_info(self):
+#         return f"Qurilma nomi:{self.name}\nQurilma turi:{self.type}\nQurilma narxi:{self.price} "
+# class Telefon(Qurilma):
+#     def __init__(self , nomi , turi , narxi , sensor , ekran_hajmi):
+#         super().__init__(nomi , turi , narxi)    
+#         self.fingerprint = sensor
+#         self.size = ekran_hajmi
+#     def info1(self):
+#         return f"{self.get_info()}\nKirish usuli:{self.fingerprint}\nEkran hajmi:{self.size}"
+# class Noutbook(Qurilma):
+#     def __init__(self , nomi , turi , narxi , shelf , touchbat , akkaumlyator ):
+#         super().__init__(nomi , turi , narxi)
+#         self.shelf = shelf
+#         self.touchbat = touchbat
+#         self.batareya = akkaumlyator
+#     def info2(self):
+#         return f"{self.get_info()}\n\nNoutbook ochilish gradusi {self.shelf}\nTouchbat borligi :{self.touchbat}\nZaryadkasi :{self.batareya}"
+# phone = Telefon("VIVO","telefon","7000000","sensor(barmoq bilan)","kichik ekran")
+# hp = Noutbook("Hp Envy" , "kompyuter" ,"8000000"  , "180^gradus" , "Bor" , "aktiv holatda 5 soatga yetadi")
+# print(phone.info1())
+# print(hp.info2())
+# 15
+
