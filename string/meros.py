@@ -253,10 +253,27 @@
 #         self.touchbat = touchbat
 #         self.batareya = akkaumlyator
 #     def info2(self):
-#         return f"{self.get_info()}\n\nNoutbook ochilish gradusi {self.shelf}\nTouchbat borligi :{self.touchbat}\nZaryadkasi :{self.batareya}"
+#         return f"{self.get_info()}\nNoutbook ochilish gradusi {self.shelf}\nTouchbat borligi :{self.touchbat}\nZaryadkasi :{self.batareya}"
 # phone = Telefon("VIVO","telefon","7000000","sensor(barmoq bilan)","kichik ekran")
 # hp = Noutbook("Hp Envy" , "kompyuter" ,"8000000"  , "180^gradus" , "Bor" , "aktiv holatda 5 soatga yetadi")
 # print(phone.info1())
 # print(hp.info2())
 # 15
-
+class Kampaniya:
+    def __init__(self , nomi , foyda_olish , hamkorlik):
+        self.name = nomi
+        self.to_make_pofit = foyda_olish
+        self.cooperation = hamkorlik
+    def get_info(self):
+        return f"Kompaniya nomi:{self.name}\nFoyda olish:{self.to_make_pofit}\nHamkorlik:{self.cooperation}"
+class Ishchi(Kampaniya):
+    def __init__(self, nomi, foyda_olish, hamkorlik , ismi , familya , yoshi , malakasi):
+        super().__init__(nomi, foyda_olish, hamkorlik)
+        self.name1 = ismi
+        self.surname = familya
+        self.age = yoshi
+        self.qualification = malakasi
+    def info(self):
+        return f"{self.get_info()}\nIshchining ismi:{self.name1}\nFamilyasi:{self.surname}\nIshchining yoshi:{self.age}\nMalakasi:{self.qualification}"
+ishchi = Ishchi("NBU","5mlnda boshlanadi","bor","Ali","Alixonov",25,"5 yil")
+print(ishchi.info())
