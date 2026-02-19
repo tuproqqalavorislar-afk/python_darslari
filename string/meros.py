@@ -259,21 +259,39 @@
 # print(phone.info1())
 # print(hp.info2())
 # 15
-class Kampaniya:
-    def __init__(self , nomi , foyda_olish , hamkorlik):
-        self.name = nomi
-        self.to_make_pofit = foyda_olish
-        self.cooperation = hamkorlik
+# class Kampaniya:
+#     def __init__(self , nomi , foyda_olish , hamkorlik):
+#         self.name = nomi
+#         self.to_make_pofit = foyda_olish
+#         self.cooperation = hamkorlik
+#     def get_info(self):
+#         return f"Kompaniya nomi:{self.name}\nFoyda olish:{self.to_make_pofit}\nHamkorlik:{self.cooperation}"
+# class Ishchi(Kampaniya):
+#     def __init__(self, nomi, foyda_olish, hamkorlik , ismi , familya , yoshi , malakasi):
+#         super().__init__(nomi, foyda_olish, hamkorlik)
+#         self.name1 = ismi
+#         self.surname = familya
+#         self.age = yoshi
+#         self.qualification = malakasi
+#     def info(self):
+#         return f"{self.get_info()}\nIshchining ismi:{self.name1}\nFamilyasi:{self.surname}\nIshchining yoshi:{self.age}\nMalakasi:{self.qualification}"
+# ishchi = Ishchi("NBU","5mlnda boshlanadi","bor","Ali","Alixonov",25,"5 yil")
+# print(ishchi.info())
+# 16
+class Ilova:
+    def __init__(self , nomi , sozlamalar , bildirishnomalar ):
+        self.name = nomi 
+        self.settings = sozlamalar
+        self.notifications = bildirishnomalar
     def get_info(self):
-        return f"Kompaniya nomi:{self.name}\nFoyda olish:{self.to_make_pofit}\nHamkorlik:{self.cooperation}"
-class Ishchi(Kampaniya):
-    def __init__(self, nomi, foyda_olish, hamkorlik , ismi , familya , yoshi , malakasi):
-        super().__init__(nomi, foyda_olish, hamkorlik)
-        self.name1 = ismi
-        self.surname = familya
-        self.age = yoshi
-        self.qualification = malakasi
+        return f"Ilova nomi:{self.name}\nIlovaning sozlamasi:{self.settings}\nIlovaning bildirishnomalar:{self.notifications}"
+class Telegramm(Ilova):
+    def __init__(self, nomi, sozlamalar, bildirishnomalar , yashirin_chat , botlar , kanallar):
+        super().__init__(nomi, sozlamalar, bildirishnomalar)
+        self.cloud_based = yashirin_chat
+        self.bot = botlar
+        self.channels = kanallar
     def info(self):
-        return f"{self.get_info()}\nIshchining ismi:{self.name1}\nFamilyasi:{self.surname}\nIshchining yoshi:{self.age}\nMalakasi:{self.qualification}"
-ishchi = Ishchi("NBU","5mlnda boshlanadi","bor","Ali","Alixonov",25,"5 yil")
-print(ishchi.info())
+        return f"{self.get_info()}\nYashirin chat:{self.cloud_based}\nBotlar:{self.bot}\nKanallar:{self.channels}"
+ilova1 = Telegramm("Telagramm" , "Sozlamasi bor" , "Bildishnomalar bor" , "Yashirin chatlar bor" , "Bot bor " , "Kanallar bor")   
+print(ilova1.info())
