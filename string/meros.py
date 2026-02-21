@@ -278,20 +278,73 @@
 # ishchi = Ishchi("NBU","5mlnda boshlanadi","bor","Ali","Alixonov",25,"5 yil")
 # print(ishchi.info())
 # 16
-class Ilova:
-    def __init__(self , nomi , sozlamalar , bildirishnomalar ):
-        self.name = nomi 
-        self.settings = sozlamalar
-        self.notifications = bildirishnomalar
-    def get_info(self):
-        return f"Ilova nomi:{self.name}\nIlovaning sozlamasi:{self.settings}\nIlovaning bildirishnomalar:{self.notifications}"
-class Telegramm(Ilova):
-    def __init__(self, nomi, sozlamalar, bildirishnomalar , yashirin_chat , botlar , kanallar):
-        super().__init__(nomi, sozlamalar, bildirishnomalar)
-        self.cloud_based = yashirin_chat
-        self.bot = botlar
-        self.channels = kanallar
-    def info(self):
-        return f"{self.get_info()}\nYashirin chat:{self.cloud_based}\nBotlar:{self.bot}\nKanallar:{self.channels}"
-ilova1 = Telegramm("Telagramm" , "Sozlamasi bor" , "Bildishnomalar bor" , "Yashirin chatlar bor" , "Bot bor " , "Kanallar bor")   
-print(ilova1.info())
+# class Ilova:
+#     def __init__(self , nomi , sozlamalar , bildirishnomalar ):
+#         self.name = nomi 
+#         self.settings = sozlamalar
+#         self.notifications = bildirishnomalar
+#     def get_info(self):
+#         return f"Ilova nomi:{self.name}\nIlovaning sozlamasi:{self.settings}\nIlovaning bildirishnomalar:{self.notifications}"
+# class Telegramm(Ilova):
+#     def __init__(self, nomi, sozlamalar, bildirishnomalar , yashirin_chat , botlar , kanallar):
+#         super().__init__(nomi, sozlamalar, bildirishnomalar)
+#         self.cloud_based = yashirin_chat
+#         self.bot = botlar
+#         self.channels = kanallar
+#     def info(self):
+#         return f"{self.get_info()}\nYashirin chat:{self.cloud_based}\nBotlar:{self.bot}\nKanallar:{self.channels}"
+# ilova1 = Telegramm("Telagramm" , "Sozlamasi bor" , "Bildishnomalar bor" , "Yashirin chatlar bor" , "Bot bor " , "Kanallar bor")   
+# print(ilova1.info())
+# # 17
+# class Transport:
+#     def __init__(self , nomi , gildiraklar_soni , rangi , yili):
+#         self.name = nomi
+#         self.wheel = gildiraklar_soni
+#         self.color = rangi
+#         self.year = yili
+#     def get_info(self):
+#         return f"Transport nomi:{self.name}\nTransportning gildiraklar soni:{self.wheel}\nTransport rangi:{self.color}\nTransport ishlab chiqarilgan yili:{self.year}"
+# class Avtobus(Transport):
+#     def __init__(self, nomi, gildiraklar_soni, rangi, yili, orindiqlar_soni, qavatlar_soni):
+#         super().__init__(nomi, gildiraklar_soni, rangi, yili)
+#         self.seat = orindiqlar_soni
+#         self.floor = qavatlar_soni
+#     def info1(self):
+#         return f"{self.get_info()}\nTransportning oridiqlar soni:{self.seat}\nTransportning qavatlar soni:{self.floor}\n"
+# class Poyezd(Transport):
+#     def __init__(self, nomi, gildiraklar_soni, rangi, yili, vagonlar_soni, turi):
+#         super().__init__(nomi, gildiraklar_soni, rangi, yili)
+#         self.wagon =  vagonlar_soni
+#         self.type = turi
+#     def info2(self):
+#         return f"{self.get_info()}\nTransportning vagonlar soni:{self.wagon}\nTransport turi:{self.type}"
+# avtobus = Avtobus("Avtobus","8ta","oq",2023,"24ta","1 qavatli")
+# poyezd = Poyezd("Poyezd","gildiraklari yoq","moviy",2025,"30ta","Tez yurar")
+# print(avtobus.info1())
+# print(poyezd.info2())
+# 18
+# class Shaxs:
+#     def __init__(self, ismi, familyasi,yoshi):
+#         self.name = ismi
+#         self.surname = familyasi
+#         self.age = yoshi
+#     def get_info(self):
+#         return f"Shaxsning ismi:{self.name}\nShaxsning familyasi:{self.surname}\nShaxsning yoshi:{self.age}"
+# class Talaba(Shaxs):
+#     def __init__(self, ismi, familyasi, yoshi, kursi, yonalishi):
+#         super().__init__(ismi, familyasi, yoshi)
+#         self.course = kursi
+#         self.faculty = yonalishi
+#     def info1(self):
+#         return f"{self.get_info()}\nShaxsning kursi:{self.course}\nShaxsning yonalishi:{self.faculty}\n" 
+# class Oqituvchi(Shaxs):
+#     def __init__(self, ismi, familyasi, yoshi, fani, malakasi,):
+#         super().__init__(ismi, familyasi, yoshi)
+#         self.subject = fani
+#         self.qualification = malakasi
+#     def info2(self):
+#         return f"{self.get_info()}\nShaxsning otadigan fani:{self.subject}\nShaxsning malakasi:{self.qualification}"
+# student = Talaba("Axror","Alixonov",25,"2 kurs","shifokorlik")
+# teacher = Oqituvchi("Malika","Zuxriddinova",30,"ona tili","5yil")
+# print(student.info1())
+# print(teacher.info2())    
