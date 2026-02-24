@@ -348,3 +348,59 @@
 # teacher = Oqituvchi("Malika","Zuxriddinova",30,"ona tili","5yil")
 # print(student.info1())
 # print(teacher.info2())    
+# 19
+# class Shaxs:
+#     def __init__(self,ismi,familyasi,sharifi,yoshi):
+#         self.name = ismi
+#         self.surname = familyasi
+#         self.sharif = sharifi
+#         self.age = yoshi
+#     def get_info(self):
+#         return f"Shaxsning ismi:{self.name}\nShaxsning familyasi:{self.surname}\nShaxsning sharifi:{self.sharif}\nShaxsning yoshi:{self.age}"
+# class Oqituvchi(Shaxs):
+#     def __init__(self, ismi, familyasi, sharifi, yoshi,malakasi,fani,oyligi):
+#         super().__init__(ismi, familyasi, sharifi, yoshi)
+#         self.qualification = malakasi
+#         self.subject = fani
+#         self.salary = oyligi
+#     def info(self):
+#         return f"{self.get_info()}\nShaxsning malakasi:{self.qualification}\nShaxsning otadigan fani:{self.subject}\nShaxsning ish haqisi:{self.salary}"
+# teacher = Oqituvchi("Mahliyo","Ahmedova","Salimjonovna",24,"2-yil","adabiyot","5mln")
+# print(teacher.info())
+# 20. Binodan Uy klassini meros oling va yangi metod qo‘shing.
+# 21. Ota klassdagi metodni super() yordamida kengaytiring.
+# 22. Kitob klassidan ElektronKitob klassini meros oling.
+# # 20
+# class Bino:
+#     def __init__(self,nomi,qavati):
+#         self.name = nomi
+#         self.floor = qavati
+#     def get_info(self):
+#         return f"Binoning nomi:{self.name}\nBinoning qavatlar soni:{self.floor}"
+# class Uy(Bino):
+#     def __init__(self, nomi, qavati,xonalar,bog):
+#         super().__init__(nomi, qavati)
+#         self.room = xonalar
+#         self.garden = bog
+#     def info(self):
+#         return f"{self.get_info()}\nBinoning xonalar soni:{self.room}\nBinoning bogi:{self.garden}"
+# uy = Uy("uy","2 qavat","10 xona","bor")
+# print(uy.info())
+# 22
+# class Kitob:
+#     def __init__(self,nomi,turi,betlari):
+#         self.name = nomi
+#         self.type = turi
+#         self.page = betlari
+#     def get_info(self):
+#         return f"Kitobning nomi:{self.name}\nKitobning turi:{self.type}\nKitobning betlar soni:{self.page}"
+# class Elektronkitob(Kitob):
+#     def __init__(self, nomi, turi, betlari,pdf,qidiruv,raqamli_format):
+#         super().__init__(nomi, turi, betlari)
+#         self.pdf = pdf
+#         self.scerch = qidiruv
+#         self.digital_format = raqamli_format
+#     def info(self):
+#         return f"{self.get_info()}\nKitobning pdfsi:{self.pdf}\nKitobni qidirish:{self.scerch}\nKitobning raqamli formati:{self.digital_format}"
+# kitob = Elektronkitob("sozlar sehrida","sheriy toplam","60 bet","bor","bor","raqamli format")
+# print(kitob.info())
