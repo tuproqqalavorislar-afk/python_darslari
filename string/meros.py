@@ -367,9 +367,6 @@
 #         return f"{self.get_info()}\nShaxsning malakasi:{self.qualification}\nShaxsning otadigan fani:{self.subject}\nShaxsning ish haqisi:{self.salary}"
 # teacher = Oqituvchi("Mahliyo","Ahmedova","Salimjonovna",24,"2-yil","adabiyot","5mln")
 # print(teacher.info())
-# 20. Binodan Uy klassini meros oling va yangi metod qo‘shing.
-# 21. Ota klassdagi metodni super() yordamida kengaytiring.
-# 22. Kitob klassidan ElektronKitob klassini meros oling.
 # # 20
 # class Bino:
 #     def __init__(self,nomi,qavati):
@@ -404,3 +401,70 @@
 #         return f"{self.get_info()}\nKitobning pdfsi:{self.pdf}\nKitobni qidirish:{self.scerch}\nKitobning raqamli formati:{self.digital_format}"
 # kitob = Elektronkitob("sozlar sehrida","sheriy toplam","60 bet","bor","bor","raqamli format")
 # print(kitob.info())
+# 23
+# class Mashina:
+#     def __init__(self,model,yil,rang):
+#         self.model = model
+#         self.year = yil 
+#         self.color = rang
+#     def get_info(self):
+#         return f"Mashinaning modeli:{self.model}\nMashinaning ishlab chiqarilgan yili:{self.year}\nMashinaning rangi:{self.color}"
+# class ElektroAvto(Mashina):
+#     def __init__(self, model, yil, rang,energetika,zaryad_olish):
+#         super().__init__(model, yil, rang)
+#         self.elektr = energetika
+#         self.charging = zaryad_olish
+#     def info(self):
+#         return f"{self.get_info()}\nMashinaning yoqilgi turi:{self.elektr}\nMashinaning zaryad olish vaqti:{self.charging}"
+# elektroavto = ElektroAvto("BYD","2026","oq","elektrda yuriydi","2 soatda")
+# print(elektroavto.info())
+# 26
+# class Maktab:
+#     def __init__(self,xonalar,oquvchilar,oqituvchilar):
+#         self.room = xonalar
+#         self.student = oquvchilar
+#         self.teacher = oqituvchilar
+#     def get_info(self):
+#         return f"Xonalar soni:{self.room}\nOquvchilar soni:{self.student}\nOqituvchilar soni:{self.teacher}"
+# class Sinf(Maktab):
+#     def __init__(self, xonalar, oquvchilar, oqituvchilar,partalar,kursi,shkaf):
+#         super().__init__(xonalar, oquvchilar, oqituvchilar)
+#         self.desk = partalar
+#         self.chair = kursi
+#         self.closet =shkaf
+#     def info(self):
+#         return f"{self.get_info()}\nPartalar soni:{self.desk}\nKursilar soni:{self.chair}\nShkaflar soni:{self.closet}"
+# xona = Sinf("60 ta xona","800 nafar","50 nafar","15 ta","30 ta","2 ta")
+# print(xona.info())
+# 27. Avto klassidan Mercedes, Chevrolet klasslarini meros oling.
+# 28. Texnika klassidan Printer va Skanner klasslarini meros oling.
+# 29. Sportchi klassidan Futbolchi klassini meros oling.
+# 30. Student klassidan Talaba klassini meros oling, yangi atribut qo‘shing.
+# 27
+class Avto:
+    def __init__(self,model,yil,tezlik,yoqilgi,rangi):
+        self.model = model
+        self.year = yil
+        self.speed = tezlik
+        self.fuel = yoqilgi
+        self.color = rangi
+    def get_info(self):
+        return f"Mashinaning modeli:{self.model}\nMashina chiqarilgan yili:{self.year}\nMashinaning max tezligi:{self.speed}\nMashinaning yoqilgi turi:{self.fuel}\nMashinaning rangi:{self.color}"
+class Mercedes(Avto):
+    def __init__(self, model, yil, tezlik, yoqilgi, rangi,xavfsizlik,dizayn):
+        super().__init__(model, yil, tezlik, yoqilgi, rangi)
+        self.safe = xavfsizlik
+        self.design = dizayn
+    def info1(self):
+        return f"{self.get_info()}\nMashinaning xavfsizligi:{self.safe}\nMashinaning dizayni:{self.design}"
+class Chevrolet(Avto):
+    def __init__(self, model, yil, tezlik, yoqilgi, rangi,extiyot_qisimlari,ishlab_chiqarilgan_joyi):
+        super().__init__(model, yil, tezlik, yoqilgi, rangi)
+        self.spare_parts = extiyot_qisimlari
+        self.place = ishlab_chiqarilgan_joyi
+    def info2(self):
+        return f"{self.get_info()}\nMashinaning extiyot qismlari:{self.spare_parts}\nMashinaning ishlab chiqarilgan joyi:{self.place}"
+car1 = Mercedes("Mercedes","2026 yil","210–250 km/soat","benzin","qora","ABS","Elegant va jiddiy tashqi ko‘rinish")
+car2 = Chevrolet("Chevrolet Cobalt","2026 yil","170–180 km/soat","metan","oq","bor","uzbekistan")
+print(car1.info1())
+print(car2.info2())
