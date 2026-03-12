@@ -7,7 +7,7 @@ from telegram.ext import (
     filters
 )
 
-TOKEN = "8627418432:AAH7yN3Wil-mjJIMTtUfuDQPjKEA_-VX5CI"
+TOKEN = ""
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Salom!\nIsmingizni kiriting: ")
