@@ -441,30 +441,40 @@
 # 29. Sportchi klassidan Futbolchi klassini meros oling.
 # 30. Student klassidan Talaba klassini meros oling, yangi atribut qo‘shing.
 # 27
-class Avto:
-    def __init__(self,model,yil,tezlik,yoqilgi,rangi):
-        self.model = model
-        self.year = yil
-        self.speed = tezlik
-        self.fuel = yoqilgi
-        self.color = rangi
-    def get_info(self):
-        return f"Mashinaning modeli:{self.model}\nMashina chiqarilgan yili:{self.year}\nMashinaning max tezligi:{self.speed}\nMashinaning yoqilgi turi:{self.fuel}\nMashinaning rangi:{self.color}"
-class Mercedes(Avto):
-    def __init__(self, model, yil, tezlik, yoqilgi, rangi,xavfsizlik,dizayn):
-        super().__init__(model, yil, tezlik, yoqilgi, rangi)
-        self.safe = xavfsizlik
-        self.design = dizayn
-    def info1(self):
-        return f"{self.get_info()}\nMashinaning xavfsizligi:{self.safe}\nMashinaning dizayni:{self.design}"
-class Chevrolet(Avto):
-    def __init__(self, model, yil, tezlik, yoqilgi, rangi,extiyot_qisimlari,ishlab_chiqarilgan_joyi):
-        super().__init__(model, yil, tezlik, yoqilgi, rangi)
-        self.spare_parts = extiyot_qisimlari
-        self.place = ishlab_chiqarilgan_joyi
-    def info2(self):
-        return f"{self.get_info()}\nMashinaning extiyot qismlari:{self.spare_parts}\nMashinaning ishlab chiqarilgan joyi:{self.place}"
-car1 = Mercedes("Mercedes","2026 yil","210–250 km/soat","benzin","qora","ABS","Elegant va jiddiy tashqi ko‘rinish")
-car2 = Chevrolet("Chevrolet Cobalt","2026 yil","170–180 km/soat","metan","oq","bor","uzbekistan")
-print(car1.info1())
-print(car2.info2())
+# class Avto:
+#     def __init__(self,model,yil,tezlik,yoqilgi,rangi):
+#         self.model = model
+#         self.year = yil
+#         self.speed = tezlik
+#         self.fuel = yoqilgi
+#         self.color = rangi
+#     def get_info(self):
+#         return f"Mashinaning modeli:{self.model}\nMashina chiqarilgan yili:{self.year}\nMashinaning max tezligi:{self.speed}\nMashinaning yoqilgi turi:{self.fuel}\nMashinaning rangi:{self.color}"
+# class Mercedes(Avto):
+#     def __init__(self, model, yil, tezlik, yoqilgi, rangi,xavfsizlik,dizayn):
+#         super().__init__(model, yil, tezlik, yoqilgi, rangi)
+#         self.safe = xavfsizlik
+#         self.design = dizayn
+#     def info1(self):
+#         return f"{self.get_info()}\nMashinaning xavfsizligi:{self.safe}\nMashinaning dizayni:{self.design}"
+# class Chevrolet(Avto):
+#     def __init__(self, model, yil, tezlik, yoqilgi, rangi,extiyot_qisimlari,ishlab_chiqarilgan_joyi):
+#         super().__init__(model, yil, tezlik, yoqilgi, rangi)
+#         self.spare_parts = extiyot_qisimlari
+#         self.place = ishlab_chiqarilgan_joyi
+#     def info2(self):
+#         return f"{self.get_info()}\nMashinaning extiyot qismlari:{self.spare_parts}\nMashinaning ishlab chiqarilgan joyi:{self.place}"
+# car1 = Mercedes("Mercedes","2026 yil","210–250 km/soat","benzin","qora","ABS","Elegant va jiddiy tashqi ko‘rinish")
+# car2 = Chevrolet("Chevrolet Cobalt","2026 yil","170–180 km/soat","metan","oq","bor","uzbekistan")
+# print(car1.info1())
+# print(car2.info2())
+# 28
+# class Texnika:
+#     def __init__(self,nomi,turi,narxi):
+#         self.name = nomi
+#         self.type = turi
+#         self.price = narxi
+#     def get_info(self):
+#         return f"Texnika nomi:{self.name}\nTexnika turi:{self.type}\nTexnika narxi:{self.price}"
+# class Printer:
+#     def __init__(self,):
