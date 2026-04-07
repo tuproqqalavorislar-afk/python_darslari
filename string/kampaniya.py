@@ -60,13 +60,13 @@ conn.autocommit = True
 # print(rows)
 
 # cur.execute(
-#     "INSERT INTO staff(worker_id,company_id) VALUES(2,2)"
+#     "INSERT INTO staff(worker_id,company_id) VALUES(1,1)"
 # )
 
 
-cur.execute(
-    "SELECT worker.name ,company.name FROM staff JOIN worker ON worker.id =staff.worker_id JOIN company ON company.id = staff.company_id "
-)
-rows = cur.fetchall()
-for row in rows:
-    print(row)
+# cur.execute(
+#     "SELECT worker.name,company.name,worker.duty FROM staff JOIN worker ON worker.id=staff.worker_id JOIN company ON company.id=staff.company_id"
+# )
+# rows = cur.fetchall()
+# for row in rows:
+#     print(row)
