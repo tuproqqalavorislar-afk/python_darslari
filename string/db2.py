@@ -1,13 +1,13 @@
-import psycopg2
+# import psycopg2
 
-ulash = psycopg2.connect(
-    host = "localhost",
-    database = "it_park",
-    user = "postgres",
-    password = "VORISLAR2026"
-)
-ulash.autocommit = True
-ishlatish = ulash.cursor()
+# ulash = psycopg2.connect(
+#     host = "localhost",
+#     database = "it_park",
+#     user = "postgres",
+#     password = "VORISLAR2026"
+# )
+# ulash.autocommit = True
+# ishlatish = ulash.cursor()
 # ishlatish.execute("CREATE DATABASE it_park")
 # ishlatish.execute(
 #     """

@@ -1,13 +1,13 @@
-import psycopg2
+# import psycopg2
 
-ulash = psycopg2.connect(
-    host = "localhost",
-    database = "market",
-    user = "postgres",
-    password = "VORISLAR2026"
+# ulash = psycopg2.connect(
+#     host = "localhost",
+#     database = "market",
+#     user = "postgres",
+#     password = "VORISLAR2026"
 
-)
-ishlatish = ulash.cursor()
+# )
+# ishlatish = ulash.cursor()
 
 # ishlatish.execute(
 #     "INSERT INTO mahsulot(name,number,price) VALUES ('orik',35,'10000')"
