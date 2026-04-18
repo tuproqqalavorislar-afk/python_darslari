@@ -1,12 +1,12 @@
-# from db3 import db_connect
+from db3 import db_connect
 
-# conn  = db_connect()
-# cur = conn.cursor()
-# conn.autocommit = True
+conn  = db_connect()
+cur = conn.cursor()
+conn.autocommit = True
 
-# cur.execute(
-#     "CREATE DATABASE company"
-# )
+cur.execute(
+    "CREATE DATABASE company"
+)
 # print("Create database")
 
 # cur.execute(

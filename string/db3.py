@@ -37,11 +37,30 @@
 #     )
 #     return conn
 
+# import psycopg2
+# def db_connect():
+#     conn = psycopg2.connect(
+#         host = "localhost",
+#         database = "inner_join",
+#         user = "postgres",
+#         password = "VORISLAR2026"
+#     )
+#     return conn
+
+# import psycopg2
+# def db_connect():
+#     conn = psycopg2.connect(
+#         host = "localhost",
+#         database = "market",
+#         user = "postgres",
+#         password = "VORISLAR2026"
+#     )
+#     return conn
 import psycopg2
 def db_connect():
     conn = psycopg2.connect(
         host = "localhost",
-        database = "inner_join",
+        database = "phoneshop",
         user = "postgres",
         password = "VORISLAR2026"
     )
