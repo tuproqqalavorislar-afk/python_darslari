@@ -56,11 +56,29 @@
 #         password = "VORISLAR2026"
 #     )
 #     return conn
+# import psycopg2
+# def db_connect():
+#     conn = psycopg2.connect(
+#         host = "localhost",
+#         database = "phoneshop",
+#         user = "postgres",
+#         password = "VORISLAR2026"
+#     )
+#     return conn
+# import psycopg2
+# def db_connect():
+#     conn = psycopg2.connect(
+#         host = "localhost",
+#         database = "libray",
+#         user = "postgres",
+#         password = "VORISLAR2026"
+#     )
+#     return conn
 import psycopg2
-def db_connect():
+def connect():
     conn = psycopg2.connect(
         host = "localhost",
-        database = "phoneshop",
+        database = "itpark",
         user = "postgres",
         password = "VORISLAR2026"
     )

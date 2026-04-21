@@ -31,6 +31,13 @@ conn.autocommit = True
 #     "SELECT * FROM phones WHERE brand in ('Samsung Galaxy')"
 #     # "SELECT * FROM phones"
 # )
+
+# cur.execute(
+    # "SELECT * FROM phones WHERE price BETWEEN 3000000 AND 10000000"
+    # "SELECT * FROM phones WHERE brand BETWEEN 'I' AND 'Z'"
+#     "SELECT id AS tartib_raqam FROM phones "
+# )
+
 # rows = cur.fetchall()
 # for row in rows:
 #     print(row)
