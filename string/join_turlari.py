@@ -5,20 +5,20 @@ cur = conn.cursor()
 conn.autocommit = True
 
 
-cur.execute(
-    "CREATE DATABASE inner_join"
-)
+# cur.execute(
+#     "CREATE DATABASE inner_join"
+# )
 
-cur.execute(
-    """
-    CREATE TABLE talaba (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100)
-    )
+# cur.execute(
+#     """
+#     CREATE TABLE talaba (
+#     id SERIAL PRIMARY KEY,
+#     name VARCHAR(100)
+#     )
 
-    """
-)
-print("Create table") 
+#     """
+# )
+# print("Create table") 
 
 cur.execute(
     """
@@ -31,20 +31,20 @@ cur.execute(
 )
 print("Create table")
 
-cur.execute(
-    "INSERT INTO talaba(name) VALUES('Jasur') "
-)
-print("Add talabalar") 
+# cur.execute(
+#     "INSERT INTO talaba(name) VALUES('Jasur') "
+# )
+# print("Add talabalar") 
 
-cur.execute(
-"INSERT INTO kursi(kurs) VALUES('Dizayner')"
-)
-print("Success") 
+# cur.execute(
+# "INSERT INTO kursi(kurs) VALUES('Dizayner')"
+# )
+# print("Success") 
 
-cur.execute(
-    "SELECT talaba.name , kursi.kurs FROM talaba LEFT JOIN kursi ON talaba.id = kursi.id"
-)
+# cur.execute(
+#     "SELECT talaba.name , kursi.kurs FROM talaba LEFT JOIN kursi ON talaba.id = kursi.id"
+# )
 
-rows = cur.fetchall()
-for row in rows:
-    print(row)
+# rows = cur.fetchall()
+# for row in rows:
+#     print(row)

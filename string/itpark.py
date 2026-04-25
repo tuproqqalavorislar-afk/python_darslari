@@ -24,7 +24,7 @@
 # )
 
 # cur.execute(
-    # "SELECT * FROM students ORDER BY name"
+#     "SELECT * FROM students"
     # "SELECT * FROM students ORDER BY grade"
     # "SELECT * FROM students ORDER BY direction"
     # "SELECT * FROM students LIMIT 4"

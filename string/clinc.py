@@ -40,27 +40,12 @@ conn.autocommit = True
 # print("Create table")
 
 # cur.execute(
-#     "INSERT INTO patients(name) VALUES('Zoxira')"
+#     "INSERT INTO patients(name) VALUES('Zoxira'),('Sevinchoy'),('Egamberdi')"
 # )
 # print("Add patients")
 
 # cur.execute(
-#     "INSERT INTO patients(name) VALUES('Sevinchoy')"
-# )
-# print("Add patients")
-
-# cur.execute(
-#     "INSERT INTO patients(name) VALUES('Egamberdi')"
-# )
-# print("Add patients")
-
-# cur.execute(
-#     "INSERT INTO doctors(name) VALUES('Mirzabek')"
-# )
-# print("Add doctors")
-
-# cur.execute(
-#     "INSERT INTO doctors(name) VALUES('Kamoladdin')"
+#     "INSERT INTO doctors(name) VALUES('Mirzabek'),('Kamoladdin')"
 # )
 # print("Add doctors")
 
@@ -75,8 +60,16 @@ conn.autocommit = True
 # print('added')
 
 # cur.execute(
-#     "SELECT patients.name,doctors.name FROM clinc JOIN patients ON patients.id=clinc.patients_id JOIN doctors ON doctors.id=clinc.doctors_id "
+    # "DELETE FROM doctors"
+    # "SELECT patients.name,doctors.name FROM clinc JOIN patients ON patients.id=clinc.patients_id JOIN doctors ON doctors.id=clinc.doctors_id "
 # )
 # rows = cur.fetchall()
 # for row in rows:
 #     print(rows)
+
+cur.execute(
+    "SELECT * FROM patients CROSS JOIN doctors"
+)
+rows = cur.fetchall()
+for row in rows:
+    print(rows)
